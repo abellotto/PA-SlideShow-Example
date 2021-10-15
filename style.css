@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+.tela {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.header--slider {
+    background-color: rgb(130, 148, 160);
+    height: 50px;
+}
+
+.slider--space {
+    flex: 1;
+    overflow: hidden; 
+    /* overflow vai retirar a barra de rolagem horizontal */
+}
+
+.slider--controls {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 99; */
+    
+
+}
+
+.slider--control {
+    height: 50px;
+    width: 50px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    background-image: url('images/seta.png');
+}
+
+.arrowPrev {
+    transform: rotate(180deg);
+}
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px 1px 1px #333;
+    
+}
+.img1 {
+    background-image: url('images/1.jpg');
+}
+.img2 {
+    background-image: url('images/2.jpg');
+}
+.img3 {
+    background-image: url('images/3.jpg');
+}
